@@ -15,8 +15,8 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     # CAUTION: useAffectedRows=true is necessary
     url: jdbc:mysql://localhost1:13306/test?useUnicode=true&characterEncoding=UTF-8&useAffectedRows=true&useSSL=false&rewriteBatchedStatements=true&failOverReadOnly=false
-    username: srm
-    password: 123456
+    username: root
+    password: ENC(WH182nMzvpVl54LJMbUeYA==)
     hikari:
       max-lifetime: 600000
 mybatis:
@@ -25,6 +25,11 @@ mybatis:
 
 swagger:
   enabled: true
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 eureka:
   instance:

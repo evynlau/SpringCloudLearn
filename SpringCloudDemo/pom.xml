@@ -41,6 +41,11 @@
         <!-- https://mvnrepository.com/artifact/org.jetbrains/annotations -->
         <jetbrains.annotations.version>20.1.0</jetbrains.annotations.version>
 
+        <!-- https://mvnrepository.com/artifact/com.github.ulisesbocchio/jasypt-spring-boot-starter -->
+        <jasypt.spring.boot.version>3.0.3</jasypt.spring.boot.version>
+        <!-- spring-cloud-netflix-eureka-server-2.2.5.RELEASE.pom -->
+        <jersey.client.version>1.19.1</jersey.client.version>
+
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <lombok.version>1.18.20</lombok.version>
         <!-- https://mvnrepository.com/artifact/cn.hutool/hutool-all -->
@@ -173,6 +178,13 @@
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
                 <version>${hutool.version}</version>
+            </dependency>
+
+            <!-- Jasypt -->
+            <dependency>
+                <groupId>com.github.ulisesbocchio</groupId>
+                <artifactId>jasypt-spring-boot-starter</artifactId>
+                <version>${jasypt.spring.boot.version}</version>
             </dependency>
 
         </dependencies>

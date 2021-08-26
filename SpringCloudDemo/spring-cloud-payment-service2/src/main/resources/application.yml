@@ -15,13 +15,18 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     # CAUTION: useAffectedRows=true is necessary
     url: jdbc:mysql://localhost1:13306/test?useUnicode=true&characterEncoding=UTF-8&useAffectedRows=true&useSSL=false&rewriteBatchedStatements=true&failOverReadOnly=false
-    username: srm
-    password: 123456
+    username: root
+    password: ENC(Qz2z9xgvc5UxDKzPLEhbsw==)
     hikari:
       max-lifetime: 600000
 mybatis:
   mapperLocations: classpath:mapper/*.xml
   type-aliases-package: com.liuwei.learn.payment.entity
+# Jasypt
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
 
 swagger:
   enabled: true
