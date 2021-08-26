@@ -70,6 +70,7 @@
         <module>spring-cloud-payment-api</module>
         <module>spring-cloud-order-service</module>
         <module>spring-cloud-eureka2</module>
+        <module>spring-cloud-payment-service2</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
