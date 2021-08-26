@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: payment-service2
+    name: payment-service
   #  security:
   #    user:
   #      name: admin
@@ -34,6 +34,9 @@ swagger:
 eureka:
   instance:
     hostname: localhost
+    #eureka 主机名称
+#    instance-id: 51srm
+    prefer-ip-address: true #访问路径可以显示ip
   client:
     registerWithEureka: true
     #是否从Eureka服务端抓取已有的注册信息，集群情况下需设置为true配合ribbon做负载
