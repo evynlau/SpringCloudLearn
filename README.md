@@ -10,8 +10,8 @@
 - [x] 服务集群化
 - [x] 服务注册框架zookeeper支持
 - [ ] 支持consul
-- [ ] 支持ribbon负载
-- [ ] 支持Feign|OpenFeign
+- [x] 支持ribbon负载
+- [x] 支持Feign|OpenFeign
 - [ ] 支持Hystrix 服务降级熔断
 - [ ] 支持GateWay 路由网关
 - [ ] 支持Config 配置中心
