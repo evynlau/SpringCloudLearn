@@ -7,8 +7,8 @@
 - [x] 添加单机版eureka
 - [x] 添加集群版eureka
 - [x] 服务注册入集群eureka
-- [ ] 服务集群化
-- [ ] 服务注册框架zookeeper支持
+- [x] 服务集群化
+- [x] 服务注册框架zookeeper支持
 - [ ] 支持consul
 - [ ] 支持ribbon负载
 - [ ] 支持Feign|OpenFeign
