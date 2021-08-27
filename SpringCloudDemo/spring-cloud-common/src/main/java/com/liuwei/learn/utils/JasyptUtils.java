@@ -52,10 +52,4 @@ public class JasyptUtils {
         return config;
     }
 
-//    public static void main(String[] args) {
-//        // 加密,打印出来的就是密码
-//        System.out.println(encryptPwd("1q232w34", "1q232w34"));
-//        // 解密
-//        System.out.println(decyptPwd("1q232w34", "W7Z4aVyrU7xRO+SzEEsgclpTB/c1OPzA"));
-//    }
 }
