@@ -76,6 +76,8 @@
         <module>spring-cloud-order-service</module>
         <module>spring-cloud-eureka2</module>
         <module>spring-cloud-payment-service2</module>
+        <module>spring-cloud-payment-service-zk</module>
+        <module>spring-cloud-order-service-zk</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
@@ -185,6 +187,13 @@
                 <groupId>com.github.ulisesbocchio</groupId>
                 <artifactId>jasypt-spring-boot-starter</artifactId>
                 <version>${jasypt.spring.boot.version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-zookeeper-discovery -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
+                <version>2.2.5.RELEASE</version>
             </dependency>
 
         </dependencies>

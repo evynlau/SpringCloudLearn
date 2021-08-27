@@ -11,6 +11,9 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       defaultZone: http://learn2.51srm.com:9901/eureka/
+  server:
+    #自我保护机制 默认true 生产建议true
+    enable-self-preservation: false
 spring:
   application:
     name: eurka-service
