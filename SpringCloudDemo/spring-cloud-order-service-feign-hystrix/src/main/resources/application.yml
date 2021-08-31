@@ -21,6 +21,10 @@ ribbon:
   #建立连接后访问服务超时时间
   ConnectTimeout: 5000
 
+
 logging:
   level:
     com.liuwei.learn.hystrix.service.PaymentFeignService: debug
+feign:
+  hystrix:
+    enabled: true
