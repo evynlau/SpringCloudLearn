@@ -1,0 +1,23 @@
+server:
+  port: 9901
+eureka:
+  instance:
+    #映射本地hosts，模拟两台机器
+    hostname: learn2.51srm.com
+  client:
+    #声明是否将自己的信息注册到 Eureka 服务器上
+    registerWithEureka: false
+    #是否到 Eureka 服务器中抓取注册信息
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://learn1.51srm.com:9900/eureka/
+  server:
+    #自我保护机制 默认true 生产建议true
+    enable-self-preservation: false
+spring:
+  application:
+    name: eurka-service2
+#  security:
+#    user:
+#      name: admin
+#      password: admin
