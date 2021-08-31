@@ -10,7 +10,9 @@ eureka:
     #是否到 Eureka 服务器中抓取注册信息
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://learn2.51srm.com:9901/eureka/
+      #配合eureka2工程做集群注册中心
+#      defaultZone: http://learn2.51srm.com:9901/eureka/
+      defaultZone: http://localhost:9900/eureka/
   server:
     #自我保护机制 默认true 生产建议true
     enable-self-preservation: false
