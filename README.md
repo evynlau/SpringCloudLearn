@@ -12,7 +12,7 @@
 - [ ] 支持consul
 - [x] 支持ribbon负载
 - [x] 支持Feign|OpenFeign
-- [ ] 支持Hystrix 服务降级熔断
+- [x] 支持Hystrix 服务降级熔断
 - [ ] 支持GateWay 路由网关
 - [ ] 支持Config 配置中心
 - [ ] 支持Bus 消息总线
