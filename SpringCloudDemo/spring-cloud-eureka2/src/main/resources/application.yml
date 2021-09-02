@@ -1,5 +1,5 @@
 server:
-  port: 9901
+  port: 8762
 eureka:
   instance:
     #映射本地hosts，模拟两台机器
@@ -10,7 +10,7 @@ eureka:
     #是否到 Eureka 服务器中抓取注册信息
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://learn1.51srm.com:9900/eureka/
+      defaultZone: http://learn1.51srm.com:8761/eureka/
   server:
     #自我保护机制 默认true 生产建议true
     enable-self-preservation: false

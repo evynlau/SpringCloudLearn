@@ -1,5 +1,5 @@
 server:
-  port: 9900
+  port: 8761
 eureka:
   instance:
     #映射本地hosts，模拟两台机器
@@ -11,8 +11,8 @@ eureka:
     fetchRegistry: false
     serviceUrl:
       #配合eureka2工程做集群注册中心
-#      defaultZone: http://learn2.51srm.com:9901/eureka/
-      defaultZone: http://localhost:9900/eureka/
+#      defaultZone: http://learn2.51srm.com:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
   server:
     #自我保护机制 默认true 生产建议true
     enable-self-preservation: false
