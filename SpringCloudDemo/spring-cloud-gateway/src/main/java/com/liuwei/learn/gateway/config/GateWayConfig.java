@@ -27,4 +27,24 @@ public class GateWayConfig {
                .uri("http://51srm.com/portal.php")).build();
        return router.build();
     }
+    @Bean
+    public RouteLocator custom2(RouteLocatorBuilder builder){
+       RouteLocatorBuilder.Builder router = builder.routes();
+       router.route("path_jd_get_cookie",r -> r
+               .path("/passport/**")
+               .uri("https://wq.jd.com/passport/**")).build();
+       router.route("path_jd_get_cookie2",r -> r
+               .path("/myJd/**")
+               .uri("https://home.m.jd.com/myJd/**")).build();
+       router.route("path_jd_get_cookie3",r -> r
+               .path("/user/**")
+               .uri("https://plogin.m.jd.com/user/**")).build();
+       router.route("path_jd_get_cookie_login",r -> r
+               .path("/login/**")
+               .uri("https://plogin.m.jd.com/login/**")).build();
+       router.route("path_jd_get_cookie4",r -> r
+               .path("/favicon.ico")
+               .uri("https://home.m.jd.com/favicon.ico")).build();
+       return router.build();
+    }
 }

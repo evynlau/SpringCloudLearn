@@ -83,6 +83,8 @@
         <module>spring-cloud-order-service-feign-hystrix</module>
         <module>spring-cloud-hystrix-dashboard</module>
         <module>spring-cloud-gateway</module>
+        <module>spring-cloud-conifg</module>
+        <module>spring-cloud-config-client</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
