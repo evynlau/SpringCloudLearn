@@ -13,6 +13,11 @@
 - [x] 支持ribbon负载
 - [x] 支持Feign|OpenFeign
 - [x] 支持Hystrix 服务降级熔断
-- [ ] 支持GateWay 路由网关
-- [ ] 支持Config 配置中心
-- [ ] 支持Bus 消息总线
+- [x] 支持GateWay 路由网关
+- [x] 支持Config 配置中心
+- [x] 支持Bus 消息总线
+- [ ] 支持Stream 消息驱动
+- [ ] 支持Sleuth 链路跟踪
+- [ ] 支持Nacos 注册配置中心
+- [ ] 支持Sentinel 断路器
+- [ ] 支持Seata 分布式事务
