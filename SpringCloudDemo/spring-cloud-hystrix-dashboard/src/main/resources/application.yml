@@ -1,6 +1,0 @@
-server:
-  port: 9800
-
-hystrix:
-  dashboard:
-    proxy-stream-allow-list: "*"
