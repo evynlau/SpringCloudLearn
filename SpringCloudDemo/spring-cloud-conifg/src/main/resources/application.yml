@@ -12,8 +12,29 @@ spring:
           search-paths:
             - SpringCloudLearn
       label: config
+    bus:
+      refresh:
+        enabled: true
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
+          replication-factor: 1
+  kafka:
+    bootstrap-servers: 192.168.47.129:9092,192.168.47.130:9092,192.168.47.131:9092
+    consumer:
+      group-id: springCloudBus  #这里bus的消息topic可以不用配置，默认是springCloudBus
 
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka
+
+#暴露bus刷新监控端点
+#curl -X POST "http://localhost:8888/actuator/bus-refresh"
+#通过config-server端进行通知，由bus向kafka发送消息，config-client客户端进行统一配置更新
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "bus-refresh"

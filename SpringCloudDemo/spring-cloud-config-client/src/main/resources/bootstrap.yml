@@ -10,6 +10,8 @@ spring:
       name: config
       profile: dev
       uri: http://localhost:8888
+  kafka:
+    bootstrap-servers: 192.168.47.129:9092,192.168.47.130:9092,192.168.47.131:9092
 
 eureka:
   client:
