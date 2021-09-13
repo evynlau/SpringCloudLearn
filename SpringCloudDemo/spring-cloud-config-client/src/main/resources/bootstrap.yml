@@ -1,14 +1,16 @@
 server:
   port: 8889
+
 spring:
   application:
     name: config-client
   cloud:
     config:
-      label: master
-      name: application
-      profile: config
+      label: config
+      name: config
+      profile: dev
       uri: http://localhost:8888
+
 eureka:
   client:
     service-url:

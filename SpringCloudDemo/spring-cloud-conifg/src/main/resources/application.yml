@@ -11,7 +11,7 @@ spring:
           uri: https://github.com/evynlau/SpringCloudLearn.git
           search-paths:
             - SpringCloudLearn
-      label: master
+      label: config
 
 eureka:
   client:
