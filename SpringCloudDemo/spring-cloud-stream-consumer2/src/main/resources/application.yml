@@ -1,5 +1,5 @@
 server:
-  port: 9011
+  port: 9012
 spring:
   application:
     name: stream-consumer
@@ -15,7 +15,7 @@ spring:
           destination: streamBindingsDest #默认是output
           content-type: application/json
           binder: kafka
-          group: consumerA
+          group: consumerA  #同组消费一次，不同组消费多次 ，设置group后未消费的消息还会被再次消费
 
 eureka:
   client:
