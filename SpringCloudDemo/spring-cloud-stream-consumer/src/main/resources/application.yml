@@ -1,8 +1,8 @@
 server:
-  port: 9001
+  port: 9011
 spring:
   application:
-    name: stream-provider
+    name: stream-consumer
   cloud:
     stream:
       kafka:
