@@ -24,8 +24,9 @@ public class IMessageProvierImpl implements IMessageProvider {
 
     @Override
     public String send() {
-        boolean flag = output.send(MessageBuilder.withPayload(IdUtil.randomUUID()).build());
-        return String.format("IMessageProvierImpl#send()  flag:{}",flag);
+        String message = IdUtil.randomUUID();
+        boolean flag = output.send(MessageBuilder.withPayload(message).build());
+        return "IMessageProvierImpl#send()  flag:"+flag+"  message :"+message;
     }
 
 }

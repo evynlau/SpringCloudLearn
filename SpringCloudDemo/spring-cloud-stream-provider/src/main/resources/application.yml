@@ -10,6 +10,11 @@ spring:
           brokers: 192.168.47.129:9092,192.168.47.130:9092,192.168.47.131:9092
           auto-add-partitions: true
           replication-factor: 3
+      bindings:
+        output:
+          destination: streamBindingsDest #默认是output
+          content-type: application/json
+          binder: kafka
 
 eureka:
   client:
