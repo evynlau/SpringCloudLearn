@@ -89,6 +89,7 @@
         <module>spring-cloud-stream-consumer</module>
         <module>spring-cloud-stream-consumer2</module>
         <module>spring-cloud-zookeeper</module>
+        <module>spring-cloud-kafka</module>
     </modules>
 
     <!-- 子模块继承之后，提供作用：锁定版本+子module不用写groupId和version -->
