@@ -6,11 +6,11 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/8/27 16:26
+ * @Author :LiuWei
+ * @Date :Created in 2021/8/27 16:26
  * @Package: com.liuwei.learn.order
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @SpringBootApplication
 @EnableFeignClients

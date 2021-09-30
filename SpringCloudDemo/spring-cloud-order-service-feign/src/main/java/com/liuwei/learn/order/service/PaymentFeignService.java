@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/8/27 16:29
+ * @Author: LiuWei
+ * @Date: Created in 2021/8/27 16:29
  * @Package: com.liuwei.learn.order.service
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Component
 @FeignClient(value = "PAYMENT-SERVICE")

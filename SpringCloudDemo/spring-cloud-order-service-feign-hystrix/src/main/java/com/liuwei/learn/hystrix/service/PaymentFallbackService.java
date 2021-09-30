@@ -6,8 +6,8 @@ import org.springframework.stereotype.Component;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/31 17:09
  * @Package: com.liuwei.learn.hystrix.service
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Component
 public class PaymentFallbackService implements PaymentFeignService{

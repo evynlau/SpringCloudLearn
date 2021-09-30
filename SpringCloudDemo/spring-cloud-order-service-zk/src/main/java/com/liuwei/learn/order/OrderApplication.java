@@ -5,11 +5,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/8/27 11:11
+ * @Author :LiuWei
+ * @Date :Created in 2021/8/27 11:11
  * @Package: com.liuwei.learn.order
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @SpringBootApplication
 @EnableDiscoveryClient

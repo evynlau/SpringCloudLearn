@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Configuration;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/31 16:21
  * @Package: com.liuwei.learn.hystrix.config
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Configuration
 public class FeignConfig {

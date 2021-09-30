@@ -27,7 +27,7 @@ public class PaymentService {
      * 超时服务降级
      *
      * @param id
-     * @return
+     * @return 错误信息
      */
     @HystrixCommand(fallbackMethod = "timeout_handler", commandProperties = {
             @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
@@ -50,7 +50,7 @@ public class PaymentService {
      * 服务降级的回调方法
      *
      * @param id
-     * @return
+     * @return 错误信息
      */
     public String timeout_handler(Integer id) {
         return "线程name：" + Thread.currentThread().getName() + " --- method timeout_handler,id:" + id + " O(∩_∩)O";
@@ -60,7 +60,8 @@ public class PaymentService {
      * 服务熔断
      * HystrixProperty 中的name来自  {@link HystrixCommandProperties}
      * https://github.com/Netflix/Hystrix/wiki/How-it-Works
-     * @return
+     *
+     * @return 错误信息
      */
     @HystrixCommand(fallbackMethod = "circuitBreakerHandler", commandProperties = {
             @HystrixProperty(name = "circuitBreaker.enabled", value = "true"),//是否开启断路器

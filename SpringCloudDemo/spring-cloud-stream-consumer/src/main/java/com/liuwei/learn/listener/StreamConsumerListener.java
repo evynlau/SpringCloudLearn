@@ -8,11 +8,11 @@ import org.springframework.messaging.Message;
 import org.springframework.stereotype.Component;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/9/14 16:55
+ * @Author: LiuWei
+ * @Date: Created in 2021/9/14 16:55
  * @Package: com.liuwei.learn.listener
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Component
 @EnableBinding(Sink.class)

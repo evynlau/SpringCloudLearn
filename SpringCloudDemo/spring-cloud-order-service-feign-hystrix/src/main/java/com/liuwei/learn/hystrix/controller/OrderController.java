@@ -16,8 +16,8 @@ import java.util.concurrent.TimeUnit;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/31 16:17
  * @Package: com.liuwei.learn.hystrix.controller
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @RestController
 @Slf4j
@@ -31,7 +31,7 @@ public class OrderController {
      * 服务降级
      * 未指定回调方法，采用类默认的全局回调global_handler
      * @param id
-     * @return
+     * @return 降级信息
      */
     @HystrixCommand
     @GetMapping("/consumer/payment/hs/ok/{id}")
@@ -43,8 +43,8 @@ public class OrderController {
      * 服务降级
      * 为使用@HystrixCommand 采用feign接口实现类的回调
      * @see com.liuwei.learn.hystrix.service.PaymentFallbackService
-     * @param id
-     * @return
+     * @param id 参数
+     * @return 错误信息
      */
     @GetMapping("/consumer/payment/hs/ok2/{id}")
     public String ok2(@PathVariable("id") Integer id){
@@ -54,8 +54,8 @@ public class OrderController {
     /**
      * 超时服务降级
      * 降级处理方式方法专属降级回调
-     * @param id
-     * @return
+     * @param id 参数
+     * @return 错误信息
      */
     @HystrixCommand(fallbackMethod = "timeout_handler",commandProperties = {
             @HystrixProperty(name="execution.isolation.thread.timeoutInMilliseconds",value = "2000")
@@ -68,7 +68,7 @@ public class OrderController {
     /**
      * 服务降级的回调方法
      * @param id
-     * @return
+     * @return 降级后错误信息
      */
     public String timeout_handler(Integer id){
         return "客户端----线程name："+Thread.currentThread().getName()+" --- method timeout_handler,id:"+id+" O(∩_∩)O";

@@ -7,8 +7,8 @@ import org.jasypt.encryption.pbe.config.SimpleStringPBEConfig;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/26 16:55
  * @Package: com.liuwei.learn.utils
- * @Modified By：
- * @Description：Jasypt加密类
+ * @Modified By:
+ * @Description:Jasypt加密类
  */
 public class JasyptUtils {
 
@@ -17,7 +17,7 @@ public class JasyptUtils {
      *
      * @param password 配置文件中设定的加密密码 jasypt.encryptor.password
      * @param value    待加密值
-     * @return
+     * @return 加密后的字符串
      */
     public static String encryptPwd(String password, String value) {
         PooledPBEStringEncryptor encryptOr = new PooledPBEStringEncryptor();
@@ -31,7 +31,7 @@ public class JasyptUtils {
      *
      * @param password 配置文件中设定的加密密码 jasypt.encryptor.password
      * @param value    待解密密文
-     * @return
+     * @return 解密后的字符串
      */
     public static String decyptPwd(String password, String value) {
         PooledPBEStringEncryptor encryptOr = new PooledPBEStringEncryptor();

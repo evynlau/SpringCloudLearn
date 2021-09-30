@@ -5,11 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/8/27 17:02
+ * @Author: LiuWei
+ * @Date: Created in 2021/8/27 17:02
  * @Package: com.liuwei.learn.order.config
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Configuration
 public class FeignConfig {

@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/31 16:02
  * @Package: com.liuwei.learn.hystrix.service
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Component
 @FeignClient(value = "PAYMENT-HYSTRIX-SERVICE",fallback = PaymentFallbackService.class)

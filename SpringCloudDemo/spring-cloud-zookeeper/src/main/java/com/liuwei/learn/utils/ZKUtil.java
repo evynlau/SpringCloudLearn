@@ -22,9 +22,9 @@ public class ZKUtil {
     /**
      * 获取客户端
      *
-     * @param url
-     * @param timeout
-     * @return
+     * @param url zookeeper 地址
+     * @param timeout 超时时间
+     * @return CuratorFramework
      */
     public static CuratorFramework getClient(String url, int timeout) {
         /**

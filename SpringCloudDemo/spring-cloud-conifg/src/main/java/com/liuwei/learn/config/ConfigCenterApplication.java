@@ -9,8 +9,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @Author ：LiuWei
  * @Date ：Created in 2021/9/2 17:16
  * @Package: com.liuwei.learn.config
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @SpringBootApplication
 @EnableEurekaClient

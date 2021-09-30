@@ -9,8 +9,8 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/31 16:01
  * @Package: com.liuwei.learn.hystrix
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @SpringBootApplication
 @EnableFeignClients

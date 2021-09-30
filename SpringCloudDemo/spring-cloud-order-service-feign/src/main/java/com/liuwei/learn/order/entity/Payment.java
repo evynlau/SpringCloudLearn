@@ -5,11 +5,11 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @Author ：LiuWei
- * @Date ：Created in 2021/8/25 16:49
+ * @Author: LiuWei
+ * @Date: Created in 2021/8/25 16:49
  * @Package: com.liuwei.learn.payment.entity
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Data
 @AllArgsConstructor

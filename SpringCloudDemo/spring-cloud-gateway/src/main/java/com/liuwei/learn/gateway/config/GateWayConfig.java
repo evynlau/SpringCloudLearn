@@ -11,8 +11,8 @@ import reactor.core.publisher.Flux;
  * @Author ：LiuWei
  * @Date ：Created in 2021/9/2 15:28
  * @Package: com.liuwei.learn.gateway.config
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Configuration
 public class GateWayConfig {

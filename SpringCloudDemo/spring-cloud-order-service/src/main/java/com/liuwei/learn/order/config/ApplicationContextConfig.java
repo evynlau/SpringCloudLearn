@@ -9,8 +9,8 @@ import org.springframework.web.client.RestTemplate;
  * @Author ：LiuWei
  * @Date ：Created in 2021/8/26 9:31
  * @Package: com.liuwei.learn.order.config
- * @Modified By：
- * @Description：
+ * @Modified By:
+ * @Description:
  */
 @Configuration
 public class ApplicationContextConfig {
